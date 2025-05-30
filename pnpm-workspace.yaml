@@ -1,0 +1,7 @@
+packages:
+  - client
+  - db
+  - domain-model
+  - metal-flow-import
+  - server
+  - shared
