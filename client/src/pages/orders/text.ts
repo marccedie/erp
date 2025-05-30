@@ -1,0 +1,25 @@
+export const t = {
+  city: 'Город',
+  contractor: 'Контрагент',
+  factShipment: 'Факт отгрузка',
+  id: 'ID',
+  inputPlaceholder: 'Счет, контрагент',
+  invoice: 'Счет',
+  manager: 'Менеджер',
+  name: 'Наим.',
+  noContent: 'Нет содержимого',
+  ordersTitle: 'Очередность выполнения',
+  payment: 'Оплата',
+  plannedShipping: 'План. отгрузка',
+  preOrders: 'Предзаказы',
+  priorityList: 'Очередность',
+  quantity: 'Кол-во',
+  recentlyPaidOrders: 'Недавно оплаченные',
+  report: 'Отчет',
+  searchInArchive: 'Поиск в архиве',
+  shipmentsInTheCurrentMonth: 'Отгрузка в текущем месяце',
+  today: 'Сегодня',
+  uploadTheFile: 'Загрузить файл',
+  yesterday: 'Вчера'
+} as const
+

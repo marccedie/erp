@@ -1,0 +1,35 @@
+subscription GetNotifications($_eq: Int!, $limit: Int) {
+  orders_notifications(
+    where: { user_id: { _eq: $_eq } }
+    limit: $limit
+    order_by: { id: desc }
+  ) {
+    id
+    seen
+    comment {
+      id
+      text
+      created_at
+      user {
+        id
+        first_name
+        last_name
+      }
+    }
+    order {
+      id
+      city
+      contractor
+    }
+  }
+}
+
+mutation UpdateNotificationSeen($ID: Int!, $Seen: Boolean!) {
+  update_orders_notifications_by_pk(
+    pk_columns: { id: $ID }
+    _set: { seen: $Seen }
+  ) {
+    id
+    seen
+  }
+}
