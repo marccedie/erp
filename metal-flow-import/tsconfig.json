@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "esModuleInterop": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": false,
+    "target": "ESNext",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      }
+    ]
+  }
+}
